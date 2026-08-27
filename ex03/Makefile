@@ -1,5 +1,5 @@
 NAME=sim
-SRC=sim.sv AND.sv OR.sv NOT.sv
+SRC=sim.sv half_adder.sv
 
 all: $(NAME)
 	mv ./obj_dir/$(NAME) $(NAME)
@@ -14,7 +14,7 @@ clean:
 
 fclean: clean
 	rm -rf dump.fst
-	rm -f $(NAME)
+	rm $(NAME)
 
 re: fclean all
 

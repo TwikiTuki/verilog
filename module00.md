@@ -135,8 +135,8 @@ Allowed constructs : module, logic, wire, initial, gate primitives (`xor`, `and`
 Allowed system tasks/functions: $dumpfile, $dumpvars, $display, $write, $finish
 
 ## Hardware Design (full_adder.sv)
-Hardware Inputs:  [7:0]op1, [7:0]op2, [7:0]carry
-Harware Outputs: [7:0]sum, [7:0]carry
+Hardware Inputs:  [7:0]op1, [7:0]op2, [7:0]carry   
+Harware Outputs: [7:0]sum, [7:0]carry   
 
 
 ## Simulation (sim.sv)

@@ -14,7 +14,7 @@ clean:
 
 fclean: clean
 	rm -rf dump.fst
-	rm -f $(NAME)
+	rm $(NAME)
 
 re: fclean all
 

@@ -14,6 +14,6 @@ clean:
 
 fclean: clean
 	rm -rf dump.fst
-	rm $(NAME)
+	rm -f $(NAME)
 
 .PHONY: all clean fclean re

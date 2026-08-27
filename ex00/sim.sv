@@ -12,10 +12,12 @@ module sim();
 		$dumpfile("dump.fst");
 		$dumpvars(0, sim);
 
+	#10
         value = 100;
         count = 12;
 
         $display("Simulation finished: value = %0d, count = %0d", value, count);
+	#10
 
         $finish;
     end

@@ -1,0 +1,22 @@
+NAME=sim
+SRC=sim.sv AND.sv OR.sv NOT.sv
+
+all: $(NAME)
+	mv ./obj_dir/$(NAME) $(NAME)
+	./$(NAME)
+
+
+$(NAME): $(SRC)
+	verilator --binary --trace-fst -o $(NAME) -Wall $(SRC) --top-module sim
+
+clean:
+	rm -rf obj_dir
+
+fclean: clean
+	rm -rf dump.fst
+	rm -f $(NAME)
+
+re: fclean all
+
+
+.PHONY: all clean fclean re

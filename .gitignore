@@ -1,0 +1,5 @@
+.*fst
+obj_dir/*
+obj_dir/**
+sim
+
